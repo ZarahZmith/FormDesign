@@ -13,12 +13,12 @@
 
         <aside>
           <label for="fullname-input">Full Name</label>
-          <input type="text" name="fullname" id="fullname-input">
+          <input type="text" name="fullname" id="fullname-input" placeholder="Luke Skywalker" required>
         </aside>
 
         <aside>
           <label for="email">Email</label>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" placeholder="luke@sky.com" required>
         </aside>
 
         <aside>
@@ -33,7 +33,7 @@
 
         <aside>
           <label for="originstory-input">Origin Story</label>
-          <textarea name="originstory" id="originstory-input"></textarea>
+          <textarea name="originstory" id="originstory-input" required></textarea>
         </aside>
       </fieldset>
 
@@ -42,7 +42,7 @@
 
         <aside>
           <label for="favorite-ability">Favorite Ability</label>
-          <input type="text" name="favoriteability" id="favorite-ability">
+          <input type="text" name="favoriteability" id="favorite-ability" placeholder="precognition">
         </aside>
 
         <aside>
@@ -68,7 +68,27 @@
         </aside>
 
       </fieldset>
+      <fieldset>
+        <legend>Application Info</legend>
 
+        <aside>
+          <label for="desiredmentor-input">Desired Mentor</label>
+          <input type="text" name="desiredmentor" id="desiredmentor-input" placeholder="Yoda">
+        </aside>
+
+        <aside>
+          <label for="password">Application Password</label>
+          <input type="text" name="ApplicationPassword" id="password" required>
+        </aside>
+
+        <aside>
+          <label for="darkside-input">How do you get to the dark side?</label>
+          <textarea name="darkside" id="darkside-input" required></textarea>
+        </aside>
+
+      </fieldset>
+      <input type="submit" value="Start Over">
+      <input type="submit" value="Apply">
     </form>
   </body>
 
