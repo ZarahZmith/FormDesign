@@ -1,6 +1,17 @@
 fieldset {
   display: inline;
 }
+/* This made everything encompassed within the aside bole, which was not my intention
+aside {
+  font-weight: bold;
+}*/
+
+/* This was my attempt to put the label above the input
+label {
+  display: block;
+}*/
+
+
 footer {
   color: grey;
   font-size: .7em;
