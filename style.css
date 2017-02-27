@@ -11,8 +11,11 @@ label {
   display: block;
 }*/
 
-
+input.selector {
+  background-color: rgb(113, 209, 235);
+  border-color: rgb(153, 18, 226)
+}
 footer {
-  color: grey;
+  color: rgb(131, 133, 132);
   font-size: .7em;
 }

@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <title>Force User Sign Up Form</title>
     <link href="style.css" rel="stylesheet">
   </head>
+
   <body>
-    <form action="http://requestb.in/1635gb71" method="post">
+    <form action="http://requestb.in/1635gb71" method="post" enctype="application/x-www-form-urlencoded">
 
       <fieldset>
         <legend>Basic Info</legend>
 
         <aside>
           <label for="fullname-input">Full Name</label>
-          <input type="text" name="fullname" id="fullname-input" placeholder="Luke Skywalker" required>
+          <input type="text" name="fullname" id="fullname-input" placeholder="Jordan Kasper" required>
         </aside>
 
         <aside>
           <label for="picture">Profile Pic</label>
-          <input type="file" name="ProfilePicture" id="picture" enctype="application/x-www-form-urlencoded">
+          <input type="file" name="ProfilePicture" id="picture">
         </aside>
 
         <aside>
@@ -32,9 +34,11 @@
           <label>
             <input type="radio" name="side" value="light">
             Light
+          </label>
           <label>
             <input type="radio" name="side" value="dark">
             Dark
+          </label>
         </aside>
 
         <aside>
@@ -48,18 +52,20 @@
 
         <aside>
           Lightsaber Color
-          <select>
-            <option value="S">Select Color</option>
-            <option value="R">Red</option>
-            <option value="B">Blue</option>
-            <option value="G">Green</option>
-            <option value="P">Purple</option>
+          <select id="LightsaberColor">
+            <option value="S" name="SelectColor">Select Color</option>
+            <option value="R" name="RedLightsaber">Red</option>
+            <option value="B" name="BlueLightsaber">Blue</option>
+            <option value="G" name="GreenLightsaber">Green</option>
+            <option value="P" name"PurpleLightsaber">Purple</option>
           </select>
         </aside>
 
         <aside>
+          <label>
           How many objects can you levitate at once?
-            <input type="number" min="1">
+            <input type="number" name="NumberOfObjectsYouCanLevitate" min="1">
+          </label>
         </aside>
 
         <aside>
@@ -72,21 +78,27 @@
           <label>
             <input type="checkbox" name="experience" value="speeder">
             Speeder
+          </label>
           <label>
             <input type="checkbox" name="experience" value="transport">
             Transport
+          </label>
           <label>
             <input type="checkbox" name="experience" value="x-wing">
             X-wing
+          </label>
           <label>
             <input type="checkbox" name="experience" value="TIEfighter">
             TIE Fighter
+          </label>
           <label>
             <input type="checkbox" name="experience" value="starship">
             Starship
+          </label>
           <label>
             <input type="checkbox" name="experience" value="bantha">
             Bantha
+          </label>
         </aside>
 
       </fieldset>
@@ -100,7 +112,7 @@
 
         <aside>
           Application Date
-          <input type="date" placeholder="mm/dd/yyyy">
+          <input type="date" name="ApplicationDate" placeholder="mm/dd/yyyy">
         </aside>
 
         <aside>
@@ -113,8 +125,8 @@
           <textarea name="darkside" id="darkside-input" required></textarea>
         </aside>
 
-        <input type="reset" value="Start Over">
-        <input type="submit" value="Apply">
+        <input type="reset" value="Start Over" class="selector">
+        <input type="submit" value="Apply" class="selector">
 
       </fieldset>
       <footer>
